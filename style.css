@@ -1,0 +1,68 @@
+.fenetre{
+    overflow: hidden;
+    width: 100%;
+}
+
+.bande {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.carte{
+    width: calc(100% / 5);
+    height: 400px;
+    background: #8737e7;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    opacity: 1;
+}
+
+.carte.active{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.carte.side{
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.carte.ultraSide{
+    transform: scale(0.7);
+    opacity: 0.6;
+}
+
+.carte.disparu{
+    transform: scale(0.5);
+    opacity: 0.2;
+}
+
+.next, .prev{
+    display: inline-block;
+}
+
+.next{
+    background: #000000;
+    color : #ffffff;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+    padding: 20px 40px;
+    margin: 20px;
+}
+
+.prev{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+    padding: 20px 40px;
+    margin: 20px;
+    border: 2px solid #000000;
+}
